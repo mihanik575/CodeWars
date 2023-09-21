@@ -8,7 +8,6 @@ def biggest(nums):
     return nums
 
 print(biggest([1,22,3]))
-
 # print(str(biggest[1])[0])
 
 # import codewars_test as test
