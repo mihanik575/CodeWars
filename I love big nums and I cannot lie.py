@@ -1,11 +1,19 @@
 # https://www.codewars.com/kata/56121f3312baa28c8500005b/train/python
+# Write a function that given an array of numbers >= 0, will arrange them such that they form the biggest number.
+#
+# For example:
+#
+# [1, 2, 3] --> "321" (3-2-1)
+# [3, 30, 34, 5, 9] --> "9534330" (9-5-34-3-30)
+# The results will be large so make sure to return a string.
 
 def biggest(nums):
-    sorted(nums)
-    # sort = []
-    # for i in nums:
-    #     in
-    return nums
+    biggest = []
+    for i in nums:
+        if i >biggest[0]:
+            biggest.insert(0, i)
+
+    return biggest
 
 print(biggest([1,22,3]))
 # print(str(biggest[1])[0])
